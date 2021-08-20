@@ -19,28 +19,28 @@
                     <img class="img-fluid" src="./images/mac.png" alt="">
                 </div>
                 <div class="col-md-6 pe-5">
-                    <h1>customize your Blue 24-inch iMac with Apple M1 chip</h1>
+                    <h1>Customize your Blue 24-inch iMac with Apple M1 chip</h1>
                     <p>Apple M1 chip with 8 core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory, 256GB SSD storage, two Thunderbolt/USB 4 ports, Magic Mouse, Magic Keyboard - US English.</p>
                     <div class="mt-4">
                         <h3>Memory</h3>
                         <div>
-                            <button class="btn btn-dark mt-2 light">8GB unified memory</button>
-                            <button class="btn btn-dark mt-2 light">16GB unified memory</button>
+                            <button id="memory-8gb" class="btn btn-dark mt-2 light">8GB unified memory</button>
+                            <button id="memory-16gb" class="btn btn-dark mt-2 light">16GB unified memory</button>
                         </div>
                     </div>
                     <div class="mt-4">
                         <h3>Storage</h3>
                         <div>
-                            <button class="btn btn-dark mt-2 light">256GB SSD storage</button>
-                            <button class="btn btn-dark mt-2 light">512GB SSD storage</button>
-                            <button class="btn btn-dark mt-2 light">1TB SSD storage</button>
+                            <button id="storage-256gb" class="btn btn-dark mt-2 light">256GB SSD storage</button>
+                            <button id="storage-512gb" class="btn btn-dark mt-2 light">512GB SSD storage</button>
+                            <button id="storage-1tb" class="btn btn-dark mt-2 light">1TB SSD storage</button>
                         </div>
                     </div>
                     <div class="mt-4">
                         <h3>Choose your delivery option</h3>
                         <div>
-                            <button class="btn btn-dark mt-2 light">Friday, Aug 25 FREE Delivery</button>
-                            <button class="btn btn-dark mt-2 light">Monday, Aug 21 FREE Delivery</button>
+                            <button id="free-delivery" class="btn btn-dark mt-2 light">Friday, Aug 25 FREE Delivery</button>
+                            <button id="fast-delivery" class="btn btn-dark mt-2 light">Monday, Aug 21 FAST Delivery</button>
                         </div>
                     </div>
                     <div class="d-flex justify-content-between mt-5">
@@ -52,11 +52,11 @@
                             <h4>Total Price</h4>
                         </div>
                         <div>
-                            <h4 class="fw-bold">$1299</h4>
-                            <h4 class="fw-bold">$0</h4>
-                            <h4 class="fw-bold">$0</h4>
-                            <h4 class="fw-bold">$0</h4>
-                            <h4 class="fw-bold">$1299</h4>
+                            <h4 class="fw-bold">$<span id="base-price">1299</span></h4>
+                            <h4 class="fw-bold">$<span id="memory-cost">0</span></h4>
+                            <h4 class="fw-bold">$<span id="storage-cost">0</span></h4>
+                            <h4 class="fw-bold">$<span id="delivery-cost">0</span></h4>
+                            <h4 class="fw-bold">$<span id="total-price">1299</span></h4>
                         </div>
                     </div>
                     <div class="mt-4">
