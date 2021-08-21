@@ -1,14 +1,8 @@
-/* button style */
+/* selective button style */
 .light {
     background: white;
     color: black;
 }
-
-/* promo code input */
-/* .input {
-    display: inline;
-    width: 50%;
-} */
 
 /* promo button */
 .promo-button {

@@ -51,7 +51,7 @@ function totalPrice() {
     const basePrice = document.getElementById('base-price');
     const totalPrice = document.getElementById('total-price');
     const promoTotal = document.getElementById('promo-total');
-    totalPrice.innerText = parseInt(basePrice.innerText) + parseInt(memoryCost.innerText) + parseInt(storageCost.innerText) + parseInt(deliveryCost.innerText);
+    totalPrice.innerText = parseFloat(basePrice.innerText) + parseFloat(memoryCost.innerText) + parseFloat(storageCost.innerText) + parseFloat(deliveryCost.innerText);
     promoTotal.innerText = totalPrice.innerText;
 }
 
@@ -78,7 +78,7 @@ document.getElementById('promo-button').addEventListener('click', function () {
     const promoInput = document.getElementById('promo-input');
     const total = document.getElementById('promo-total');
     if (promoInput.value == 'stevekaku') {
-        total.innerText = parseInt(totalPrice.innerText) - (20 * parseInt(totalPrice.innerText)) / 100;
+        total.innerText = parseFloat(totalPrice.innerText) - (20 * parseFloat(totalPrice.innerText)) / 100;
         console.log(total.innerText);
         promoInput.value = '';
         buttonChanges('promo-button');
