@@ -6,7 +6,7 @@ function variantSelection(costTitle, cost) {
 }
 
 
-
+// variant selection button handler
 // 8gb memory
 document.getElementById('memory-8gb').addEventListener('click', function () {
     variantSelection('memory-cost', 0);
