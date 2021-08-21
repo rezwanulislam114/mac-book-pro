@@ -62,14 +62,14 @@
                     <div class="mt-4">
                         <h5>Add Promo Code</h5>
                         <div class="d-flex align-items-center gap-2">
-                            <input class="input form-control" type="text">
-                            <button class="btn btn-danger">Apply</button>
+                            <input id="promo-input" class="input form-control" type="text">
+                            <button id="promo-button" class="btn btn-danger promo-button" disabled>Apply</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="mt-5">
-                <h1 class="text-center">Total: $1299</h1>
+                <h1 class="text-center">Total: $ <span id="promo-total">1299</span></h1>
             </div>
         </section>
     </main>

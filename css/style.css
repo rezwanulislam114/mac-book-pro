@@ -9,3 +9,8 @@
     display: inline;
     width: 50%;
 } */
+
+/* promo button */
+.promo-button {
+    transition: .5s;
+}
