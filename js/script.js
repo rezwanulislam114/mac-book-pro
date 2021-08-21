@@ -57,21 +57,9 @@ function totalPrice() {
 
 
 
-
-// promo button (promo code implement and discount)
-document.getElementById('promo-button').addEventListener('click', function () {
-    const totalPrice = document.getElementById('total-price');
-    const promoInput = document.getElementById('promo-input');
-    const total = document.getElementById('promo-total');
-    if (promoInput.value == 'stevekaku') {
-        total.innerText = parseInt(totalPrice.innerText) - (20 * parseInt(totalPrice.innerText)) / 100;
-        console.log(total.innerText);
-    }
-})
-
-// promo button (button disable / enable and color changes)
-document.getElementById('promo-input').addEventListener('keyup', function (event) {
-    const promoButton = document.getElementById('promo-button');
+// common button changes function (disabled / enabled and color changes)
+function buttonChanges(buttonId) {
+    const promoButton = document.getElementById(buttonId);
     if (event.target.value == 'stevekaku') {
         promoButton.removeAttribute('disabled');
         promoButton.classList.remove('btn-danger');
@@ -82,4 +70,22 @@ document.getElementById('promo-input').addEventListener('keyup', function (event
         promoButton.classList.remove('btn-success');
         promoButton.classList.add('btn-danger');
     }
+}
+
+// promo button (promo code implement and discount)
+document.getElementById('promo-button').addEventListener('click', function () {
+    const totalPrice = document.getElementById('total-price');
+    const promoInput = document.getElementById('promo-input');
+    const total = document.getElementById('promo-total');
+    if (promoInput.value == 'stevekaku') {
+        total.innerText = parseInt(totalPrice.innerText) - (20 * parseInt(totalPrice.innerText)) / 100;
+        console.log(total.innerText);
+        promoInput.value = '';
+        buttonChanges('promo-button');
+    }
+})
+
+// promo button (button changes)
+document.getElementById('promo-input').addEventListener('keyup', function (event) {
+    buttonChanges('promo-button');
 })
